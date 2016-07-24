@@ -16,13 +16,13 @@ PASSWORD='password1234'
 
 
 #Update
-sudo apt-get -y update
+apt-get -y update
 
 # install stuff
-sudo apt-get install -y nginx
-sudo apt-get install -y mariadb-server
-sudo apt-get install -y php-fpm php-mysql php-cli
-sudo apt-get install -y curl git
+apt-get install -y nginx
+apt-get install -y mariadb-server
+apt-get install -y php-fpm php-mysql php-cli
+apt-get install -y curl git
 
 
 #create conf file for website
@@ -55,7 +55,7 @@ EOF
 ln -s /etc/nginx/sites-available/$URL /etc/nginx/sites-enabled/
 
 #restart nginx
-sudo systemctl restart nginx
+service nginx restart
 
 #install composer
 #Usually composer is installed on host computer when using Vagrant
