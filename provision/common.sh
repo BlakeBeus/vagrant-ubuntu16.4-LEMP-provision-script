@@ -48,6 +48,8 @@ server {
         location ~ /\.ht {
                 deny all;
         }
+        
+        sendfile off;
 }
 EOF
 
