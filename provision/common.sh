@@ -14,6 +14,10 @@ DBNAME='example_database'
 USER='example_user'
 PASSWORD='password1234'
 
+#prep for php7.1 install
+apt-get install -y python-software-properties
+add-apt-repository ppa:ondrej/php
+
 
 #Update
 apt-get -y update
